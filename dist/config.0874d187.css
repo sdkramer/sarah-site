@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Text+Me+One&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background: rgb(48, 1, 123);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+image, video, canvas, svg {
+  max-width: 100%;
+}
+
+h2, h6 {
+  font-weight: 300;
+  color: rgb(213, 72, 121);
+}
+
+.hero, .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#center_img {
+  width: 50%;
+  -webkit-animation: rotation 100s infinite linear;
+  -webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+#sarah-img {
+  width: 200px;
+}
+
+/*# sourceMappingURL=/config.0874d187.css.map */
