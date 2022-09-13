@@ -36,28 +36,52 @@ image, video, canvas, svg {
 }
 
 h2, h6 {
-  font-weight: 300;
-  color: rgb(213, 72, 121);
+  font-weight: 600;
+  color: rgb(251, 117, 164);
+  -webkit-text-stroke: 0.3px rgb(254, 218, 134);
+}
+
+h6 {
+  font-style: italic;
 }
 
 .hero, .about {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-#center_img {
-  width: 50%;
-  -webkit-animation: rotation 100s infinite linear;
-  -webkit-animation-iteration-count: 1;
+.hero {
+  height: 200px;
 }
 
-@-webkit-keyframes rotation {
+.hero::after {
+  background-image: url("/1534357139.316234ef.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  z-index: -1;
+}
+
+#sara-img:hover {
+  animation-name: spin3D;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin3D {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(359deg);
+    transform: rotate(360deg);
   }
 }
 #sarah-img {

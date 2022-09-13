@@ -38,37 +38,87 @@ image, video, canvas, svg {
 }
 
 h2, h6 {
-  font-weight: 300;
-  color: rgb(213, 72, 121);
+  font-weight: 600;
+  color: rgb(251, 117, 164);
+  -webkit-text-stroke: 0.3px rgb(254, 218, 134);
+  // text-shadow: -1px 0px rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+}
+
+h6 {
+  font-style: italic;
 }
 
 .hero, .about {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   
 }
 
+.hero {
+  // position: relative;
+  // overflow: hidden;
+
+  height: 200px;
+  // background-image: url("../images/1534357139.svg");
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: contain;
+}
+
+
+
+.hero::after {
+  // height: 200px;
+  background-image: url("../images/1534357139.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  // top: -50%;
+  // left: -50%;
+  z-index: -1;
+  // background: url(background.png) 0 0 repeat;
+  // transform: rotate(-30deg);
+}
+
+#sara-img:hover {
+  animation-name: spin3D;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin3D {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
 
 
 // #center_img {
   
 // }
 
-#center_img {
-  width: 50%;
-  -webkit-animation: rotation 100s infinite linear;
-  -webkit-animation-iteration-count: 1;
-}
+// #center_img {
+//   width: 50%;
+//   -webkit-animation: rotation 100s infinite linear;
+//   -webkit-animation-iteration-count: 1;
+// }
 
-@-webkit-keyframes rotation {
-  from {
-      -webkit-transform: rotate(0deg);
-  }
-  to {
-      -webkit-transform: rotate(359deg);
-  }
-}
+// @-webkit-keyframes rotation {
+//   from {
+//       -webkit-transform: rotate(0deg);
+//   }
+//   to {
+//       -webkit-transform: rotate(359deg);
+//   }
+// }
 
 #sarah-img {
   width: 200px;
