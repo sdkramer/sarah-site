@@ -13,7 +13,8 @@ body {
 }
 
 body {
-  background: rgb(48, 1, 123);
+  background-image: url("/pexels-venelin-dimitrov-3476312.909a63fb.jpg");
+  background-size: contain;
   color: white;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
@@ -35,13 +36,20 @@ image, video, canvas, svg {
   max-width: 100%;
 }
 
-h2, h6 {
+h2 {
   font-weight: 600;
-  color: rgb(251, 117, 164);
-  -webkit-text-stroke: 0.3px rgb(254, 218, 134);
+  color: rgb(255, 235, 189);
+  -webkit-text-stroke: 0.5px rgb(64, 3, 145);
+}
+
+h2 {
+  font-size: xx-large;
 }
 
 h6 {
+  font-weight: 600;
+  color: rgb(255, 147, 228);
+  -webkit-text-stroke: 0.3px rgb(253, 254, 255);
   font-style: italic;
 }
 
@@ -58,6 +66,7 @@ p {
 }
 
 .hero {
+  margin: 10px 0 20px 0;
   height: 200px;
 }
 
@@ -68,9 +77,28 @@ p {
   background-size: contain;
   content: "";
   position: absolute;
-  width: 70%;
+  width: 40%;
   height: 70%;
   z-index: -1;
+}
+
+.role {
+  text-align: center;
+}
+
+.about {
+  background-color: rgb(48, 1, 123);
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  background-color: #67197e;
+}
+
+footer {
+  background-color: rgb(27, 1, 27);
+  text-align: center;
 }
 
 #sara-img:hover {
