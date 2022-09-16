@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/pexels-venelin-dimitrov-3476312.jpg":[["pexels-venelin-dimitrov-3476312.909a63fb.jpg","assets/images/pexels-venelin-dimitrov-3476312.jpg"],"assets/images/pexels-venelin-dimitrov-3476312.jpg"],"./../images/1534357139.svg":[["1534357139.316234ef.svg","assets/images/1534357139.svg"],"assets/images/1534357139.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/js/config.js":[function(require,module,exports) {
+},{"./../images/pexels-venelin-dimitrov-3476312.jpg":[["pexels-venelin-dimitrov-3476312.909a63fb.jpg","assets/images/pexels-venelin-dimitrov-3476312.jpg"],"assets/images/pexels-venelin-dimitrov-3476312.jpg"],"./../images/1534357139.svg":[["1534357139.316234ef.svg","assets/images/1534357139.svg"],"assets/images/1534357139.svg"],"./../images/pexels-rovenimagescom-949585.jpg":[["pexels-rovenimagescom-949585.a3835114.jpg","assets/images/pexels-rovenimagescom-949585.jpg"],"assets/images/pexels-rovenimagescom-949585.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/js/config.js":[function(require,module,exports) {
 "use strict";
 
 require("../styles/base.scss");

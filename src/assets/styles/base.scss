@@ -52,14 +52,15 @@ h2 {
 
 h6 {
   font-weight: 600;
-  color: rgb(255, 147, 228);
-  -webkit-text-stroke: 0.3px rgb(253, 254, 255);
+  color: rgb(255, 235, 189);
+  -webkit-text-stroke: 0.3px rgb(64, 3, 145);
   font-style: italic;
 }
 
 p {
   font-size: 0.5rem;
   color: rgb(253, 229, 173);
+  
 }
 
 .hero, .about {
@@ -73,7 +74,7 @@ p {
 .hero {
   // position: relative;
   // overflow: hidden;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
  
   height: 200px;
   // background-image: url("../images/1534357139.svg");
@@ -93,7 +94,7 @@ p {
 
   content: "";
   position: absolute;
-  width: 40%;
+  width: 30%;
   height: 70%;
   // top: -50%;
   // left: -50%;
@@ -107,6 +108,11 @@ p {
   text-align: center;
 }
 
+.role p {
+  margin: 5px 100px;
+  text-align: justify;
+}
+
 .about {
   background-color: rgb(48, 1, 123);
   display: flex;
@@ -114,7 +120,11 @@ p {
 }
 
 .contact {
-  background-color: #67197e;
+  background-image: url("../images/pexels-rovenimagescom-949585.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 footer {
